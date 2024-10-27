@@ -1,0 +1,33 @@
+[project]
+name = "npt-promote"
+version = "0.1dev0"
+description = "Wrapper to sync requirements then execute an arbitrary program."
+dependencies = [
+  "pip-tools<7.5"
+]
+requires-python = '>=3.9'
+keywords = ["pip-sync", "pre-commit"]
+license = {text = 'MIT'}
+readme = "README.md"
+classifiers = [
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering :: Information Analysis',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX',
+    'Operating System :: MacOS',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+
+[project.urls]
+Homepage = "https://github.com/user27182/pip-sync-wrapper"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+sync_and_run = "source.main:main"
