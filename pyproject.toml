@@ -1,5 +1,5 @@
 [project]
-name = "npt-promote"
+name = "pip-sync-wrapper"
 version = "0.1dev0"
 description = "Wrapper to sync requirements then execute an arbitrary program."
 dependencies = [
@@ -30,4 +30,4 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project.scripts]
-sync_and_run = "source.main:main"
+pip_sync_wrapper = "source.main:main"
